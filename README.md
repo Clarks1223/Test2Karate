@@ -21,4 +21,6 @@
 # Información adicional:
 Los escenarios de prueba están diseñados para interactuar con la API de Demoblaze utilizando Karate, un framework que combina pruebas de API y BDD de forma integrada. Asegúrate de tener acceso a la API de Demoblaze y ajustar las URLs y endpoints según corresponda.
 # A continuacion una fotografia del test:
-![image](https://github.com/user-attachments/assets/9a1356a2-4e0f-4b53-a4a9-6cb370e34f40)
+Existen 2 errores, ya que las pruebas de usuario ya existente y usuario y contraseña incorrectos deberían devolver los códigos 409 y 401 respectivamente, en lugar del código 200.
+![image](https://github.com/user-attachments/assets/25b5d45d-56d4-4e62-b6cb-1c72f8e5de8c)
+
