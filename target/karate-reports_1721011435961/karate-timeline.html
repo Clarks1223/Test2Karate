@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/EjercicioApis[1.1:14]","start":1721011306784,"end":1721011309447,"title":"src\/test\/resources\/EjercicioApis[1.1:14] 21:41:46.784-21:41:49.447 Crear un nuevo usuario en signup"},{"id":2,"group":1,"content":"src\/test\/resources\/EjercicioApis[2.1:25]","start":1721011309471,"end":1721011310090,"title":"src\/test\/resources\/EjercicioApis[2.1:25] 21:41:49.471-21:41:50.090 Intentar crear un usuario ya existente"},{"id":3,"group":1,"content":"src\/test\/resources\/EjercicioApis[3.1:35]","start":1721011310104,"end":1721011310575,"title":"src\/test\/resources\/EjercicioApis[3.1:35] 21:41:50.104-21:41:50.575 Usuario y password correcto en login"},{"id":4,"group":1,"content":"src\/test\/resources\/EjercicioApis[4.1:46]","start":1721011310587,"end":1721011311049,"title":"src\/test\/resources\/EjercicioApis[4.1:46] 21:41:50.587-21:41:51.049 Usuario y password incorrecto en login"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
