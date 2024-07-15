@@ -37,15 +37,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">2</div>
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-07-14 10:15:43 PM</div>
+    <div>2024-07-14 09:49:58 PM</div>
   </div>        
 </div>
 
@@ -53,13 +53,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div class="nav-item passed">
             <a href="#[1.1:14]"><span>[1.1:14]</span> <span>Crear un nuevo usuario en signup</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[2.1:25]"><span>[2.1:25]</span> <span>Intentar crear un usuario ya existente</span></a>
           </div>
           <div class="nav-item passed">
             <a href="#[3.1:35]"><span>[3.1:35]</span> <span>Usuario y password correcto en login</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[4.1:46]"><span>[4.1:46]</span> <span>Usuario y password incorrecto en login</span></a>
           </div>
         </div>
@@ -86,7 +86,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3249</span>
+              <span>ms:</span>&nbsp;<span>2616</span>
             </div>
           </div>
           <div class="step-row">
@@ -109,7 +109,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://api.demoblaze.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">287</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -137,7 +137,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/signup&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -165,7 +165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;Clarks&#39;, password: &#39;Abcd1223&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">155</div>
+    <div class="time-cell passed">115</div>
   </div>
 
    
@@ -193,7 +193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2804</div>
+    <div class="time-cell passed">2283</div>
   </div>
 
    
@@ -202,7 +202,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.9">22:15:40.597 request:
+  <div class="preformatted" data-parent="1.9">21:49:55.793 request:
 1 &gt; POST https://api.demoblaze.com/signup
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -212,12 +212,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;Clarks&quot;,&quot;password&quot;:&quot;Abcd1223&quot;}
 
-22:15:41.774 response time in milliseconds: 1166
+21:49:56.794 response time in milliseconds: 1000
 1 &lt; 200
 1 &lt; Content-Type: application/json
 1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: 26ffc2ee43853ef110d714d36e732b44
-1 &lt; Date: Mon, 15 Jul 2024 03:15:41 GMT
+1 &lt; X-Cloud-Trace-Context: 42e8c7eda740d67c7aa72f4fa46f75f8
+1 &lt; Date: Mon, 15 Jul 2024 02:49:56 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Cache-Control: private
 1 &lt; Transfer-Encoding: chunked
@@ -271,8 +271,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>353</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>510</span>
             </div>
           </div>
           <div class="step-row">
@@ -295,7 +295,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://api.demoblaze.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -351,7 +351,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;Clarks&#39;, password: &#39;contrasenia123&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -379,7 +379,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">349</div>
+    <div class="time-cell passed">419</div>
   </div>
 
    
@@ -388,7 +388,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.19">22:15:41.837 request:
+  <div class="preformatted" data-parent="1.19">21:49:56.844 request:
 1 &gt; POST https://api.demoblaze.com/signup
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 49
@@ -398,12 +398,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;Clarks&quot;,&quot;password&quot;:&quot;contrasenia123&quot;}
 
-22:15:42.182 response time in milliseconds: 343
+21:49:57.260 response time in milliseconds: 415
 1 &lt; 200
 1 &lt; Content-Type: application/json
 1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: e783e86c96171d664b28c58ae78280b7
-1 &lt; Date: Mon, 15 Jul 2024 03:15:42 GMT
+1 &lt; X-Cloud-Trace-Context: 189c97cb36b50179b48abe1b67c9472b
+1 &lt; Date: Mon, 15 Jul 2024 02:49:57 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Cache-Control: private
 1 &lt; Transfer-Encoding: chunked
@@ -423,13 +423,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.20">
-      <div class="step-ref failed">20</div>
+      <div class="step-ref passed">20</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 409</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -438,13 +438,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.20">22:15:42.184 src/test/resources/EjercicioApis.feature:20
-Then status 409
-status code was: 200, expected: 409, response time in milliseconds: 343, url: https://api.demoblaze.com/signup, response: 
-{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
-
-src/test/resources/EjercicioApis.feature:20
-</div>   
+     
 
   
 
@@ -457,13 +451,13 @@ src/test/resources/EjercicioApis.feature:20
 
   <div class="step-row">
     <div class="step-container" id="1.21">
-      <div class="step-ref skipped">21</div>
+      <div class="step-ref passed">21</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response contains { errorMessage: &#39;This user already exist.&#39; }</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">86</div>
   </div>
 
    
@@ -492,7 +486,7 @@ src/test/resources/EjercicioApis.feature:20
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>522</span>
+              <span>ms:</span>&nbsp;<span>479</span>
             </div>
           </div>
           <div class="step-row">
@@ -599,7 +593,7 @@ src/test/resources/EjercicioApis.feature:20
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">519</div>
+    <div class="time-cell passed">476</div>
   </div>
 
    
@@ -608,7 +602,7 @@ src/test/resources/EjercicioApis.feature:20
 
   
 
-  <div class="preformatted" data-parent="1.30">22:15:42.205 request:
+  <div class="preformatted" data-parent="1.30">21:49:57.373 request:
 1 &gt; POST https://api.demoblaze.com/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -618,16 +612,16 @@ src/test/resources/EjercicioApis.feature:20
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;Clarks&quot;,&quot;password&quot;:&quot;Abcd1223&quot;}
 
-22:15:42.717 response time in milliseconds: 512
+21:49:57.844 response time in milliseconds: 471
 1 &lt; 200
 1 &lt; Content-Type: application/json
 1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: e9a180e93c84a854735e22792d627eda
-1 &lt; Date: Mon, 15 Jul 2024 03:15:42 GMT
+1 &lt; X-Cloud-Trace-Context: 272ee613880aca458433c8b13d45a8b4
+1 &lt; Date: Mon, 15 Jul 2024 02:49:57 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Cache-Control: private
 1 &lt; Transfer-Encoding: chunked
-&quot;Auth_token: Q2xhcmtzMTcyMTYxMw==&quot;
+&quot;Auth_token: Q2xhcmtzMTcyMTYxMQ==&quot;
 
 
 </div>   
@@ -677,8 +671,8 @@ src/test/resources/EjercicioApis.feature:20
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>498</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>478</span>
             </div>
           </div>
           <div class="step-row">
@@ -785,7 +779,7 @@ src/test/resources/EjercicioApis.feature:20
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">496</div>
+    <div class="time-cell passed">473</div>
   </div>
 
    
@@ -794,7 +788,7 @@ src/test/resources/EjercicioApis.feature:20
 
   
 
-  <div class="preformatted" data-parent="1.40">22:15:42.746 request:
+  <div class="preformatted" data-parent="1.40">21:49:57.862 request:
 1 &gt; POST https://api.demoblaze.com/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 49
@@ -804,12 +798,12 @@ src/test/resources/EjercicioApis.feature:20
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;Clarks1223&quot;,&quot;password&quot;:&quot;Clarks1223&quot;}
 
-22:15:43.234 response time in milliseconds: 487
+21:49:58.331 response time in milliseconds: 469
 1 &lt; 200
 1 &lt; Content-Type: application/json
 1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: 4f81c7d021365b663520a51686db82d0
-1 &lt; Date: Mon, 15 Jul 2024 03:15:43 GMT
+1 &lt; X-Cloud-Trace-Context: bde51ad0a2c6365322d469fc85c396ae
+1 &lt; Date: Mon, 15 Jul 2024 02:49:58 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Cache-Control: private
 1 &lt; Transfer-Encoding: chunked
@@ -829,13 +823,13 @@ src/test/resources/EjercicioApis.feature:20
 
   <div class="step-row">
     <div class="step-container" id="1.41">
-      <div class="step-ref failed">41</div>
+      <div class="step-ref passed">41</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 401</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -844,13 +838,7 @@ src/test/resources/EjercicioApis.feature:20
 
   
 
-  <div class="preformatted" data-parent="1.41">22:15:43.236 src/test/resources/EjercicioApis.feature:41
-Then status 401
-status code was: 200, expected: 401, response time in milliseconds: 487, url: https://api.demoblaze.com/login, response: 
-{&quot;errorMessage&quot;:&quot;User does not exist.&quot;}
-
-src/test/resources/EjercicioApis.feature:41
-</div>   
+     
 
   
 
@@ -863,13 +851,13 @@ src/test/resources/EjercicioApis.feature:41
 
   <div class="step-row">
     <div class="step-container" id="1.42">
-      <div class="step-ref skipped">42</div>
+      <div class="step-ref passed">42</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response contains { errorMessage: &#39;User does not exist.&#39; }</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    

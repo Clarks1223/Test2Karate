@@ -7,40 +7,40 @@ Feature: Prueba API Demoblaze utilizando KARATE
     Given path '/signup'
     And request { username: '<username>', password: '<password>' }
     When method post
-    Then status 200
+    Then status <expectedStatus>
 
     Examples:
-      | username | password |
-      | Clarks   | Abcd1223 |
+      | username | password | expectedStatus |
+      | Clarks   | Abcd1223 | 200            |
 
   Scenario Outline: Intentar crear un usuario ya existente
     Given path '/signup'
     And request { username: '<username>', password: '<password>' }
     When method post
-    Then status 200
+    Then status <expectedStatus>
     And match response contains { errorMessage: 'This user already exist.' }
 
     Examples:
-      | username | password       |
-      | Clarks   | contrasenia123 |
+      | username | password       | expectedStatus |
+      | Clarks   | contrasenia123 | 409            |
 
   Scenario Outline: Usuario y password correcto en login
     Given path '/login'
     And request { username: '<username>', password: '<password>' }
     When method post
-    Then status 200
+    Then status <expectedStatus>
 
     Examples:
-      | username | password |
-      | Clarks   | Abcd1223 |
+      | username | password | expectedStatus |
+      | Clarks   | Abcd1223 | 200            |
 
   Scenario Outline: Usuario y password incorrecto en login
     Given path '/login'
     And request { username: '<username>', password: '<password>' }
     When method post
-    Then status 200
+    Then status <expectedStatus>
     And match response contains { errorMessage: 'User does not exist.' }
 
     Examples:
-      | username   | password   |
-      | Clarks1223 | Clarks1223 |
+      | username   | password   | expectedStatus |
+      | Clarks1223 | Clarks1223 | 401            |
